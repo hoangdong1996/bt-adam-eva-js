@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô phỏng câu truyện adam và eva</title>
+</head>
+<body>
+<script>
+    function Apple(weight) {
+        this.weight = weight;
+
+        this.getWeightApple = function () {
+            return this.weight = 10;
+        };
+
+        this.setWeightApple = function () {
+            this.weight = weight;
+        };
+        this.isEmpty = function () {
+            if (this.weight === 0) {
+                return this.isEmpty = false;
+            }
+            return true;
+        };
+    }
+    
+    function Human(name, gender, weight) {
+        this.name = name;
+        this.gender = gender;
+        this.weight = weight;
+
+        this.getName = function () {
+            return this.name = name;
+        };
+        this.setName = function (name) {
+            this.name = name;
+        };
+
+        this.getGender = function () {
+            return this.gender = gender;
+        };
+        this.setGender = function (gender) {
+            this.gender = gender;
+        };
+
+        this.getWeight = function () {
+            return this.weight = weight;
+        };
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        };
+
+        this.eatApple = function (apple) {
+            if (apple.isEmpty) {
+                console.log(this.name + " ăn táo");
+                apple.weight--;
+                this.weight += 1;
+            }
+        };
+
+        this.say = function () {
+            return console.log(this.name + " Xin chào");
+        };
+
+        this.checkApple = function (apple) {
+            return console.log("Táo có khối lượng " + apple.weight);
+        };
+    }
+</script>
+</body>
+</html>
